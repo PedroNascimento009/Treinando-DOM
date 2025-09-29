@@ -1,7 +1,5 @@
-let elemento = document.querySelector('#titulo')
+const lista = document.querySelector('.minhaLista')
 
-const p = document.createElement('p')
+const li = document.createElement('li')
 
-const header = elemento.parentElement
-
-header.insertBefore(p, elemento)
+lista.appendChild(li).innerText = 'item 4'
