@@ -1,5 +1,7 @@
-const lista = document.querySelector('.minhaLista')
+const titulo = document.querySelector('#titulo')
+const h2 = document.createElement('h2')
+h2.textContent = 'Novo titulo'
 
-const li = document.createElement('li')
+const header = titulo.parentElement
 
-lista.appendChild(li).innerText = 'item 4'
+header.replaceChild(h2, titulo)
