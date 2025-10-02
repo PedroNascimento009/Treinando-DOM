@@ -1,7 +1,5 @@
-const titulo = document.querySelector('#titulo')
-const h2 = document.createElement('h2')
-h2.textContent = 'Novo titulo'
+const listItens = document.querySelectorAll('li')
 
-const header = titulo.parentElement
-
-header.replaceChild(h2, titulo)
+for(const li of listItens){
+    li.style.color = 'red'
+}
