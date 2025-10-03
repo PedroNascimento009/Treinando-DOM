@@ -1,5 +1,13 @@
 const btn = document.querySelector('#btn')
+const btn2 = document.querySelector('#otherBtn')
 
-btn.addEventListener('click', function(){
-    console.log('Olá mundo!')
+function imprimir(){
+    console.log('Clicou')
+}
+
+btn.addEventListener('click',  imprimir)
+
+btn2.addEventListener('click', () => {
+    console.log('Evento removido')
+    btn.removeEventListener('click', imprimir)
 })
