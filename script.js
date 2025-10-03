@@ -1,5 +1,5 @@
-const listItens = document.querySelectorAll('li')
+const btn = document.querySelector('#btn')
 
-for(const li of listItens){
-    li.style.color = 'red'
-}
+btn.addEventListener('click', function(){
+    console.log('Olá mundo!')
+})
