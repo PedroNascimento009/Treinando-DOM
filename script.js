@@ -1,13 +1,11 @@
 const btn = document.querySelector('#btn')
-const btn2 = document.querySelector('#otherBtn')
+const containder = document.querySelector('#container')
 
-function imprimir(){
-    console.log('Clicou')
-}
+btn.addEventListener('click',  (e) => {
+    e.stopPropagation()
+    console.log('Clicou no botão')
+})
 
-btn.addEventListener('click',  imprimir)
-
-btn2.addEventListener('click', () => {
-    console.log('Evento removido')
-    btn.removeEventListener('click', imprimir)
+containder.addEventListener('click', () => {
+    console.log('Clicou no container')
 })
