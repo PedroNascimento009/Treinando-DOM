@@ -1,7 +1,7 @@
-document.addEventListener('keyup', function(e) {
-    console.log(`Soltou a tecla ${e.key}`);
-});
-
-document.addEventListener('keydown', function(e) {
-    console.log(`Clicou a tecla ${e.key}`);
+window.addEventListener('scroll', () => {
+    if(window.scrollY == 0){
+        console.log('Chegou no topo');
+    } else if(window.scrollY == 60){
+        console.log('Chegou no fim');
+    }
 });
