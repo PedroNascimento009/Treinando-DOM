@@ -1,11 +1,6 @@
-const btn = document.querySelector('#btn')
-const containder = document.querySelector('#container')
+const a = document.querySelector('a');
 
-btn.addEventListener('click',  (e) => {
-    e.stopPropagation()
-    console.log('Clicou no botão')
-})
-
-containder.addEventListener('click', () => {
-    console.log('Clicou no container')
-})
+a.addEventListener('click', function(event) {
+    event.preventDefault();
+    console.log('Você clicou no link, mas não foi redirecionado.');
+});
