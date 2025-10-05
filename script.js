@@ -1,7 +1,9 @@
-window.addEventListener('scroll', () => {
-    if(window.scrollY == 0){
-        console.log('Chegou no topo');
-    } else if(window.scrollY == 60){
-        console.log('Chegou no fim');
-    }
+const input = document.querySelector('#myInput');
+
+input.addEventListener('focus', () => {
+    input.style.backgroundColor = 'lightblue';
+});
+
+input.addEventListener('blur', () => {
+    input.style.backgroundColor = 'blue';
 });
