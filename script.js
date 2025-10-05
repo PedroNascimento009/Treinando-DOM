@@ -1,6 +1,7 @@
-const a = document.querySelector('a');
+document.addEventListener('keyup', function(e) {
+    console.log(`Soltou a tecla ${e.key}`);
+});
 
-a.addEventListener('click', function(event) {
-    event.preventDefault();
-    console.log('Você clicou no link, mas não foi redirecionado.');
+document.addEventListener('keydown', function(e) {
+    console.log(`Clicou a tecla ${e.key}`);
 });
