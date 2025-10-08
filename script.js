@@ -1,5 +1,9 @@
-console.log('Ainda não carregou')
+const promessa = Promise.resolve(5 + 5);
 
-const tempo =setInterval(() => {
-    console.log('Já carregou')
-}, 1000);
+console.log('Alguma coisa');
+
+promessa.then((value) => {
+        console.log(`A soma é ${value}`);
+})
+
+console.log('Outra coisa');
