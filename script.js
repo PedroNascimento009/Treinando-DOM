@@ -1,13 +1,7 @@
-function debounce(func, delay) {
-  let timeoutId;
-    return function (...args) {
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => {
-            func.apply(this, args);
-        }, delay);
-    };
-}
+console.log('Ainda não executou');
 
-window.addEventListener('mousemove', debounce((event) => {
-    console.log(`Mouse moved to: (${event.clientX}, ${event.clientY})`);
-}, 100));
+setTimeout(function() {
+    console.log('Executou');
+}, 10000);
+
+console.log('Ainda não executou 2');
