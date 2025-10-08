@@ -1,7 +1,5 @@
-console.log('Ainda não executou');
+console.log('Ainda não carregou')
 
-setTimeout(function() {
-    console.log('Executou');
-}, 10000);
-
-console.log('Ainda não executou 2');
+const tempo =setInterval(() => {
+    console.log('Já carregou')
+}, 1000);
